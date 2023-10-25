@@ -5,10 +5,10 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: Arial, sans-serif;
+    background-image: radial-gradient(#353535 5%, #000);
+    color: white;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+#timer{
+    padding: 30px;
 }
