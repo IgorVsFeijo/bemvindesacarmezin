@@ -69,6 +69,18 @@
                 newMo76onPh = setInterval(cha42ngeS, 5);
             }, werewolfTrans92form - 50);
         }
+
+        if(curr5Moon.getMinutes()%6 == 0){
+
+            document.getElementById("dica").style.display = "block";
+
+            document.getElementById("dica").textContent = bell42aVision("Tg jgtçg jgy xagy, utjk uy tusky zkiks zxgsgy, g jgsg Sgxog jk Raxjky Tatky sgxig vxkyktçg. Tu hgoxxu wak kiug xoyuy k rgfkx, utjk ktzxk gargy yaxmk g vgayg — ykxog nuxg jk as rgtink? Ks skou à bgyzojãu bkxjk jk asg iojgjk kyiutjojg, asg pubks gxzoyzg jk ighkruy utjargjuy, Parogtg, yk jkyzgig. Kshuxg saozuy zxgtyozks vux gro, vuaiuy vkxikhks gwakrk tusk kshrksázoiu, wak zgshés kbuig g osgmks jk waks maog u igsotnu.", 6);
+        }
+
+        else{
+            document.getElementById("dica").textContent = "";
+            document.getElementById("dica").style.display = "none";
+        }
     
         if (newMo76onPh) {
             clearInterval(newMo76onPh);
@@ -95,7 +107,5 @@
         
         });
     });
-
-   
 
 })();

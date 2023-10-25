@@ -8,11 +8,34 @@ body {
     color: white;
 }
 
+#timer, #dica{
+    padding: 15px;
+    flex-shrink: 1;
+}
+
 #timer{
-    padding: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#dica{
+    display: none;
 }
 
 img{
-    max-width: 90%;
+    max-width: 300px;
+    width: 80%;
     box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.22);
+}
+
+body > div{
+    width: 60%;
+    text-align: center;
+}
+
+div.flex{
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }
