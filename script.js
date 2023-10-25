@@ -77,6 +77,19 @@
         ja45cobW6olf.src = edw24ard5Cul;
     }
 
-    setInterval(witn34essCh, werewolfTrans92form);
+    document.addEventListener("visibilitychange", function() {
+
+    console.log(!document.hidden);
+
+    if (!document.hidden) {
+        ja45cobW6olf.src = edw24ard5Cul;
+        witn34essCh;
+        iniciar  = setInterval(witn34essCh, werewolfTrans92form);
+    }
+    else{
+        clearInterval(newMo76onPh)
+        clearInterval(iniciar);
+    }
+});
 
 })();
