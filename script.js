@@ -62,11 +62,10 @@
                 cha42ngeS();
             }, werewolfTrans92form - 500);
         } else {
-            // Limpe o intervalo anterior primeiro
             if (newMo76onPh) {
                 clearInterval(newMo76onPh);
             }
-            setTimeout(() => {
+            paulina = setTimeout(() => {
                 newMo76onPh = setInterval(cha42ngeS, 5);
             }, werewolfTrans92form - 50);
         }
@@ -87,7 +86,7 @@
         iniciar  = setInterval(witn34essCh, werewolfTrans92form);
     }
     else{
-        clearInterval(newMo76onPh)
+        clearTimeout(paulina);
         clearInterval(iniciar);
     }
 });
