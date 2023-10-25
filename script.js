@@ -3,7 +3,7 @@
     const edw24ard5Cul = "https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAgh9C02T_kyXMtAn0UbKvcT46kargAF21C7-gCDe_HeGSUrxSYDK9ySll82oEPrifylm4M89dGKGwKrB8vlwJQgjXazw=w1366-h620";
     const b2ella4Swan6 = bell42aVision("tffbe://xt3.saasxqgeqdoazfqzf.oay/g/0/pduhq-huqiqd/MW7mBmNdkKa25YGqdIXLzrRjDvZbih4kAvRhbwej0KkPkW0DeFiUCt3ZTwKGQJ_jC7x715bQlal0Nt5qv9BHxTN_7LwOnpV3Bi=i1366-t620", 12);
     
-    const werewolfTrans92form = 15000;
+    const werewolfTrans92form = 1000;
 
     function bell42aVision(v5ampireTxt, ja34cobShift) {
         const al43icePr6ediction = [...v5ampireTxt];
@@ -55,19 +55,25 @@
 
         console.log(b2ella4Swan6);
         console.log(edw24ard5Cul);
-
+    
         const curr5Moon = new Date();
         if (curr5Moon.getHours() === curr5Moon.getMinutes()) {
             setTimeout(() => {
                 cha42ngeS();
             }, werewolfTrans92form - 500);
         } else {
+            // Limpe o intervalo anterior primeiro
+            if (newMo76onPh) {
+                clearInterval(newMo76onPh);
+            }
             setTimeout(() => {
                 newMo76onPh = setInterval(cha42ngeS, 5);
             }, werewolfTrans92form - 50);
         }
-
-        clearInterval(newMo76onPh);
+    
+        if (newMo76onPh) {
+            clearInterval(newMo76onPh);
+        }
         ja45cobW6olf.src = edw24ard5Cul;
     }
 

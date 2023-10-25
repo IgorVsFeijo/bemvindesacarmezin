@@ -4,7 +4,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: Arial, sans-serif;
     background-image: radial-gradient(#353535 5%, #000);
     color: white;
 }
@@ -15,4 +14,5 @@ body {
 
 img{
     max-width: 90%;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.22);
 }
