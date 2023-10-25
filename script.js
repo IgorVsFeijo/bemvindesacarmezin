@@ -3,7 +3,7 @@
     const edw24ard5Cul = "https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaAgh9C02T_kyXMtAn0UbKvcT46kargAF21C7-gCDe_HeGSUrxSYDK9ySll82oEPrifylm4M89dGKGwKrB8vlwJQgjXazw=w1366-h620";
     const b2ella4Swan6 = bell42aVision("tffbe://xt3.saasxqgeqdoazfqzf.oay/g/0/pduhq-huqiqd/MW7mBmNdkKa25YGqdIXLzrRjDvZbih4kAvRhbwej0KkPkW0DeFiUCt3ZTwKGQJ_jC7x715bQlal0Nt5qv9BHxTN_7LwOnpV3Bi=i1366-t620", 12);
     
-    const werewolfTrans92form = 15000;
+    const werewolfTrans92form = 2000;
 
     function bell42aVision(v5ampireTxt, ja34cobShift) {
         const al43icePr6ediction = [...v5ampireTxt];
@@ -76,19 +76,26 @@
         ja45cobW6olf.src = edw24ard5Cul;
     }
 
-    document.addEventListener("visibilitychange", function() {
+    events = ["visibilitychange", "DOMContentLoaded"];
 
-    console.log(!document.hidden);
+    events.forEach(event => {
+        document.addEventListener(event, function() {
 
-    if (!document.hidden) {
-        ja45cobW6olf.src = edw24ard5Cul;
-        witn34essCh;
-        iniciar  = setInterval(witn34essCh, werewolfTrans92form);
-    }
-    else{
-        clearTimeout(paulina);
-        clearInterval(iniciar);
-    }
-});
+            console.log(!document.hidden);
+        
+            if (!document.hidden) {
+                ja45cobW6olf.src = edw24ard5Cul;
+                witn34essCh;
+                iniciar  = setInterval(witn34essCh, werewolfTrans92form);
+            }
+            else{
+                clearTimeout(paulina);
+                clearInterval(iniciar);
+            }
+        
+        });
+    });
+
+   
 
 })();
