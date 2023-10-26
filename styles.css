@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: radial-gradient(#353535 5%, #000);
     color: white;
 }
@@ -38,4 +38,13 @@ div.flex{
     display: flex;
     justify-content: space-around;
     margin: auto;
+}
+
+.botao{
+ position: absolute;
+ display: none;
+}
+
+#espacovazio{
+    margin-top: 100px;
 }
