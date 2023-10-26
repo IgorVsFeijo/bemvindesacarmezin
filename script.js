@@ -106,13 +106,13 @@
     aparecerBotao = setInterval(() => {
         horarioatual = new Date();
 
-        if (horarioatual.getSeconds() == (60-19)) {
+        if (horarioatual.getSeconds() == (60 - 19) || true) {
             botao.style.display = "block";
-            botao.style.top = (Math.round(Math.random()*100)) + "%";
-            botao.style.right = (Math.round(Math.random()*100)) + "%";
+            botao.style.top = (Math.round(Math.random()*80)) + "%";
+            botao.style.right = (Math.round(Math.random()*60+20)) + "%";
         }
 
-        else{
+        else {
             botao.style.display = "none";
         }
 
@@ -122,11 +122,13 @@
 
         acionar = true;
 
+        console.log(acionar);
+
         document.addEventListener("keydown", (evento) => {
 
             posicaoatual = audio1.currentTime;
 
-            if(audio1.paused && acionar){
+            if (audio1.paused && acionar) {
                 audio1.play();
             }
 
@@ -134,28 +136,37 @@
 
         document.addEventListener("keyup", () => {
 
-            setTimeout(()=>{       
-                if(acionar) audio1.pause();
+            setTimeout(() => {
+                if (acionar) audio1.pause();
             }, 400)
 
         })
 
-        entrada = window.prompt("?");
+        input = document.getElementById("espacovazio")
+        input.innerHTML = `<input type="text" id="entrada">`
 
-        if(entrada.toUpperCase() == 'SANS'){
-            document.getElementById("espacovazio").innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/Dk-JzU8c60w?si=BADOYHSQeXgWUma3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        document.getElementById("entrada").addEventListener("input", (event) => {
 
-            setTimeout(()=>{
-                document.getElementById("espacovazio").innerHTML = "";
-            }, 30000);
-        }
+            if (event.target.value.toUpperCase() == 'SANS') {
+                document.getElementById("espacovazio").innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/Dk-JzU8c60w?si=BADOYHSQeXgWUma3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
-        setTimeout(()=>{
-            acionar = false;
-            audio1.pause();
-        },5000);
+                setTimeout(() => {
+                    document.getElementById("espacovazio").innerHTML = "";
+                }, 30000);
+            }
+        })
+
 
     })
+
+    botao.addEventListener("mouseup", () => {
+        setTimeout(() => {
+            acionar = false;
+            audio1.pause();
+            document.getElementById("entrada").parentElement.removeChild(document.getElementById("entrada"));
+        }, 5000);
+    })
+
     audio1 = new Audio("audio1.mp3");
     audio1.loop = 1;
     botao = document.getElementById("botao");

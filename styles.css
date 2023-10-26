@@ -43,7 +43,7 @@ div.flex{
 .botao{
  position: absolute;
  display: none;
- font-size: 4em;
+ font-size: 3.5em;
  padding: 0px 20px;
  font-weight: bold;
  background-color: rgb(133, 6, 6);
@@ -51,6 +51,7 @@ div.flex{
 
 #espacovazio{
     margin-top: 100px;
+    display: flex;
 }
 
 @media screen and (max-width: 500px){
