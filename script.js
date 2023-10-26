@@ -106,7 +106,7 @@
     aparecerBotao = setInterval(() => {
         horarioatual = new Date();
 
-        if (horarioatual.getSeconds() == (60 - 19) || true) {
+        if (horarioatual.getSeconds() == (60 - 19)) {
             botao.style.display = "block";
             botao.style.top = (Math.round(Math.random()*80)) + "%";
             botao.style.right = (Math.round(Math.random()*60+20)) + "%";
