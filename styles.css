@@ -48,3 +48,9 @@ div.flex{
 #espacovazio{
     margin-top: 100px;
 }
+
+@media screen and (max-width: 500px){
+    div.flex{
+        flex-wrap: wrap;
+    }
+}
