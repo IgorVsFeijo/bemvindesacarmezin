@@ -123,7 +123,7 @@
         acionar = true;
 
         document.addEventListener("keydown", (evento) => {
-            
+
             posicaoatual = audio1.currentTime;
 
             if(audio1.paused && acionar){
